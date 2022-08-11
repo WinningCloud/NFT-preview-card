@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/nft-preview-card-component-main/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+  <title>NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(217, 54%, 11%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 303px;
+      height: 500px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 20px;
+    }
+
+    .main-img {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 57%;
+      width: 100%;
+
+    }
+
+    .main-img img {
+      
+      height: 255px;
+      border-radius: 10px;
+    }
+    
+
+    .main-content {
+
+      color: hsl(0, 0%, 100%);
+      font-family: 'Outfit', sans-serif;
+
+
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900px;
+      color: hsl(0, 0%, 100%);
+      padding: 30px;
+      padding-top: 2px;
+      margin: 0;
+      padding-bottom: 0;
+      font-size: 20px;
+    }
+
+    .text {
+      font-weight: 100px;
+      margin: 0;
+      padding-top: 0;
+      padding: 25px;
+      opacity: 50%;
+      padding-left: 30px;
+      padding-right: 20px;
+    }
+    .special-items{
+      width: 100%;
+      padding: 0 30px 0 30px;      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .first{
+      font-size: 18px;
+      color: hsl(178, 100%, 50%);
+      display: inline-block;
+    }
+    .second{
+      color: hsl(0, 0%, 100%);
+      opacity: 50%;
+      display: inline-block;
+      /* font-size: 18px; */
+    }
+    hr{
+      width: 85%;
+      opacity: 50%;
+      margin: 0 auto 0 auto;
+      height: 0px;
+      border: white solid 1px;
+      border-bottom: 0px;
+    }
+    .name img{
+      border: solid white 2px;
+      border-radius: 50%;
+      height: 30px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      margin-left: 12px;
+      /* padding: 10px; */
+    }
+    .name p{
+      padding-right: 50px;
+    }
+    .name{
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .creation{
+      opacity: 50%;
+    }
+    .main-name:hover{
+      cursor: pointer;
+      color: aqua;
+    }
+    .animate{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      background-color: aqua;
+      top: 20%;
+      height: 255px;
+      border-radius: 10px;
+      width: 255px;
+      position: absolute;
+
+    }
+  
+    .animate:hover{
+      animation: animate 0.15s   1  ease-in forwards;
+      cursor: pointer;
+    }
+    
+    @keyframes animate {
+      0%{
+        opacity: 0%;
+      }
+      50%{
+        opacity: 15%;
+      }
+      100%{
+        opacity: 50%;
+      }
+      
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="main-img">
+      <img src="/nft-preview-card-component-main/images/image-equilibrium.jpg" alt="">
+
+    </div>
+    <div class="main-content">
+      <p class="title">Equilibrium #3429</p>
+      <p class="text">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+    </div>
+    <div class="special-items">
+      <div class="first"><img src="/nft-preview-card-component-main/images/icon-ethereum.svg" alt="">   0.041 ETH</div>
+      
+        <div class="second">
+        <img src="/nft-preview-card-component-main/images/icon-clock.svg" alt=""> 3 days left
+        
+    </div>
+    </div>
+    <br>
+    <hr>
+    <div class="name">
+      <img src="/nft-preview-card-component-main/images/image-avatar.png" alt="">
+      <p>  <span class="creation"> Creation of </span><span class="main-name"> Jules Wyvern</span></p>
+    </div>
+  </div>
+  <div class="animate">
+    <img src="/nft-preview-card-component-main/images/icon-view.svg" alt="">
+  </div>
+</body>
+
+</html>
